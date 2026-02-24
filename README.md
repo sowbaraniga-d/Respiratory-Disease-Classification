@@ -1,32 +1,81 @@
-# Respiratory-Disease-Classification
-Deep learning project that classifies respiratory disease from chest X-ray images.
+
+# Respiratory Disease Classification using Deep Learning
+
+An end-to-end deep learning project for classifying respiratory diseases from chest X-ray images. This project demonstrates how machine learning can be applied in the healthcare domain using image-based prediction and a simple graphical user interface (GUI).
+
+---
 
 ## Project Overview
-This project classifies different *respiratory diseases* using a trained machine learning model. The model can predict multiple types of respiratory illnesses, such as *COVID-19, pneumonia, and others. It includes a **simple and user-friendly GUI* where input data can be uploaded to get predictions.  
 
-> Note: This project is for demonstration purposes only. No installation or execution is required.
+This project focuses on detecting respiratory diseases (primarily pneumonia) using a trained deep learning model. The system processes medical imaging data and provides predictions through both script-based execution and a simple GUI interface.
+
+It is designed as an educational and portfolio project showcasing the complete workflow from experimentation to deployment-ready structure.
+
+> ⚠️ Note: This project is intended for educational and demonstration purposes only and is not suitable for clinical use.
+
+---
 
 ## Features
-- Predict multiple types of respiratory diseases from input data
-- Simple GUI for uploading files
+
+- Deep learning-based respiratory disease classification
 - Pre-trained model included for reference
-- Command-line scripts available for demonstration
+- Simple GUI for running predictions
+- Jupyter notebook for experimentation and analysis
+- Lightweight and easy-to-understand implementation
+
+---
 
 ## File Structure
-- data/ - Test datasets (test.csv, test_data_set.csv)
-- models/ - Trained model file (Phenomenon_Classifier_Model.h5)
-- src/ - Python scripts: main.py, gui.py, lung_disease_detection.py
-- README.md - Project overview and details
 
-## How it works (Overview)
-- The trained model classifies multiple respiratory diseases.
-- Users can see how the GUI or scripts would process input data to generate predictions.  
-- This project is intended for educational or portfolio demonstration purposes.
+- **Test/** – Sample test dataset  
+- **Lung_Disease_Detection.ipynb** – Model experimentation and analysis notebook  
+- **gui.py** – Simple GUI interface for predictions  
+- **main.py** – Main execution script  
+- **predict.py** – Core prediction logic  
+- **pneumonia_classifier_model.h5** – Pre-trained deep learning model  
+- **README.md** – Project documentation  
 
-## Libraries Used
-- TensorFlow
-- Pandas
-- Tkinter
-- NumPy
+---
+
+## How It Works
+
+1. A pre-trained deep learning model is loaded from the `.h5` file.
+2. Input data (e.g., chest X-ray images) is processed and normalized.
+3. The model performs inference and generates predictions.
+4. Results can be viewed either through:
+   - Command-line scripts, or
+   - A simple GUI interface.
+
+---
+
+## Technologies Used
+
+- Python  
+- TensorFlow / Keras  
+- NumPy  
+- Pandas  
+- Tkinter (for GUI)  
+- Jupyter Notebook  
+
+---
+
+## Purpose
+
+This project demonstrates:
+- Applied deep learning in healthcare
+- Model deployment basics
+- GUI integration with ML models
+- End-to-end ML workflow for portfolio use
+
+It is primarily built for:
+- Learning
+- Academic submissions
+- Portfolio demonstration
+
+---
+
+## Disclaimer
+
+This project is not a medical diagnostic tool and should not be used for real-world healthcare decisions. It is intended purely for educational and research demonstration purposes.
 
 
